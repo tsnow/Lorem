@@ -1,0 +1,8 @@
+A container for filling up database fields with random, textual looking lorem ipsum data.
+
+USAGE:
+It's one ruby file, containing one class. Put it somewhere. Then:
+
+ruby script/console
+require '#{path_to_your_lorem_dir}/lorem'
+YourContentModel.all.each { |item| item.update_attributes(:description => Lorem.next) }
